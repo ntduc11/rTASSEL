@@ -58,6 +58,9 @@
     </li>
   </ul>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right"></ul>
 </div>
@@ -251,7 +254,7 @@ sudo ln -s $(/usr/libexec/java_home)/lib/server/libjvm.dylib /usr/local/lib</cod
 ## [5] "jGenotypeTable"  "jPhenotypeTable"</code></pre>
 <p>Technically, this object does not contain the full information of the data represented in R space, but merely contains addresses to the memory store of the reference TASSEL object ID. For example, if we wanted to extract the <code>GenotypeTable</code> with the S4 <code>@</code> operator, we would get something that looks like this:</p>
 <div class="sourceCode" id="cb19"><html><body><pre class="r"><span class="no">tasGenoHMP</span>@<span class="kw">jGenotypeTable</span></pre></body></html></div>
-<pre><code>## [1] "Java-Object{net.maizegenetics.dna.snp.CoreGenotypeTable@5e82df6a}"</code></pre>
+<pre><code>## [1] "Java-Object{net.maizegenetics.dna.snp.CoreGenotypeTable@15c43bd9}"</code></pre>
 <p>This entity is a <code>rJava</code> internal identifier. It isn’t until we call downstream <code>rTASSEL</code> functions where we will bring the TASSEL data into the R environment.</p>
 </div>
 </div>
